@@ -3,6 +3,7 @@
   font-family: "Poppins", cursive;
 }
 body {
+  overflow-x: hidden;
   color: azure;
   width: 100%;
   height: 82vh;
@@ -10,7 +11,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
+  background-image: url("/img/campo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   /* padding-top: -30; */
 }
 
@@ -22,17 +26,18 @@ body {
 }
 
 .botones a {
-  background-color: #ffe02e;
-  padding: 9px;
-  border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
-  -ms-border-radius: 80px;
-  -o-border-radius: 80px;
+  background-color: #198771;
+  padding-block: 14px;
+  padding-inline: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .botones a:focus {
-  background-color: rgb(246, 255, 152);
+  background-color: rgb(125, 212, 181);
 }
 
 .greetings {
@@ -45,11 +50,11 @@ body {
 @keyframes glow {
   0%,
   100% {
-    color: #fff;
+    color: #e9fffe;
     text-shadow:
-      0 0 12px #ffe02e,
-      0 0 50px #ffe02e,
-      0 0 100px #ffe02e;
+      0 0 12px #21ad98,
+      0 0 50px #21ad98,
+      0 0 100px #27c9c6;
   }
   10%,
   90% {

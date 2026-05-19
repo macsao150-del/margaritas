@@ -10,11 +10,15 @@
   --dark-color: #000;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
@@ -28,7 +32,9 @@ body {
   margin-bottom: 9%;
   z-index: 1;
   font-weight: bold;
+  text-align: center;
   letter-spacing: 4px;
+  padding: 30px;
 }
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
@@ -39,16 +45,30 @@ body {
   }
 }
 .titulo {
-  margin-bottom: 180px;
+  padding: 30px;
+  top: 0;
+  margin-top: 10px;
   font-family: "Arial Narrow", Arial, sans-serif;
   color: yellow;
   position: absolute;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
+  line-height: 40px;
   opacity: 0;
+  font-size: 30px;
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .titulo {
+    margin-top: 50px;
+    line-height: 26px;
+    padding: 30px;
+    letter-spacing: 0px;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -99,8 +119,8 @@ body {
 }
 
 .flowers {
-  position: relative;
   transform: scale(0.9);
+  position: fixed;
   /*margin-bottom: 100px;
   */
 }
@@ -485,17 +505,17 @@ body {
   }
 }
 
-@media screen and (max-width: 445px) and (min-width: 400px) {
+/* @media screen and (max-width: 445px) and (min-width: 400px) {
   .flower__leaf {
     bottom: -15.6vmin;
     transform-origin: 25% -90%;
   }
-}
+} */
 
 @media screen and (max-width: 400px) and (min-width: 360px) {
   .flower__leaf {
-    bottom: -18vmin;
-    transform-origin: 25% -150%;
+    bottom: -16vmin;
+    transform-origin: 25% -98%;
   }
 }
 
